@@ -16,8 +16,6 @@ This schedule will be used to keep track of our progress throughout the week and
 |Day 5: Fri| Additional Styling and Deploy | |
 |Final Due Date: Wed| Project Showcase | |
 
-## Trello Board
-hello
 ## Priority Matrix
 
 ## MVP
