@@ -17,7 +17,7 @@ This schedule will be used to keep track of our progress throughout the week and
 |Final Due Date: Wed| Project Showcase | |
 
 ## Trello Board
-
+hello
 ## Priority Matrix
 
 ## MVP
