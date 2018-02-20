@@ -1,7 +1,7 @@
 # Project Overview
 
 # The Stoop
-An App, built with Ruby and Ruby on Rails, that assists individuals in identifying and providing tips about government or community provided benefits and services in their areas.
+A collaborative tool, built with Ruby on Rails, that assists individuals in identifying and sharing experiences about civictech, government and community provided benefits, products and services in NYC.
 
 ## Project Schedule
 
