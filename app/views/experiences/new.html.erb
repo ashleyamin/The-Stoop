@@ -1,7 +1,7 @@
 <br />
 <br />
 <%= form_for @experience do |f|%>
-  <%= f.hidden_field :product_id, :value => "6" %>
+  <%= f.hidden_field :product_id, :value => params[:product_id] %>
   <%= f.text_field :title, placeholder: "Title" %>
   <%= f.text_area :description, placeholder: "Description" %>
   <%= f.text_area :tip, placeholder: "Tip" %>
