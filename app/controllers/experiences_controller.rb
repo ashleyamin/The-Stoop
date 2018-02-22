@@ -19,13 +19,19 @@ class ExperiencesController < ApplicationController
       render :edit
     end
   end
-  
+
   def create
     @experience = Experience.new(experience_params)
     if @experience.save
       redirect_to experience_path(@experience)
     end
   end
+
+  def destroy
+      @experience = Experience.find(params[:id])
+      @experience.destroy
+      redirect_to categories_path
+    end
 
   private
 

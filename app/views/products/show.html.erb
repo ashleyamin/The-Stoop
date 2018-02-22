@@ -5,7 +5,6 @@
 <% @product.experiences.each do |experience| %>
   <ul>
     <li>
-      <%= experience.product_id %>
       <%= experience.title %>
       <br />
       <%= experience.description %>
@@ -19,5 +18,5 @@
 <% end %>
 
 <div>
-  <%= link_to "Add New Experience", new_experience_path(@product) %>
+  <%= link_to "Add New Experience", new_experience_path %>
 </div>

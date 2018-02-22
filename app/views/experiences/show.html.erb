@@ -1,1 +1,8 @@
 <h1><%= @experience.title %></h1>
+<h1><%= @experience.description %></h1>
+
+<%= link_to "Edit Experience", edit_experience_path(@experience) %>
+
+<%= form_for @experience, html: {method: "delete"} do |f|%>
+  <%= f.submit "Delete #{@experience.title}?"%>
+<% end %>
