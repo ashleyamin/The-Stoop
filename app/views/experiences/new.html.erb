@@ -1,0 +1,15 @@
+<br />
+<br />
+<%= form_for @experience do |f|%>
+  <%= f.text_field :title, placeholder: "Title" %>
+  <%= f.text_field :description, placeholder: "Description" %>
+  <%= f.text_field :tip, placeholder: "Tip" %>
+  <%= f.text_field :name, placeholder: "Your Name" %>
+  <%= f.submit "Add Experience"%>
+  </a>
+<% end %>
+<br />
+<br />
+<div>
+  <%= link_to "Cancel", categories_path %>
+</div>

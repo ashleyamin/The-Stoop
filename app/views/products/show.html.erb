@@ -1,0 +1,22 @@
+<h2><%= @product.title %> </h2>
+<h2><%= @product.description %> </h2>
+
+<h3>Experiences with <%= @product.title %></h3>
+<% @product.experiences.each do |experience| %>
+  <ul>
+    <li>
+      <%= experience.title %>
+      <br />
+      <%= experience.description %>
+      <br />
+      <%= experience.tip %>
+      <br />
+      <%= "My name:" %>
+      <%= experience.name %>
+    </li>
+  </ul>
+<% end %>
+
+<div>
+  <%= link_to "Add New Experience", new_experience_path %>
+</div>
