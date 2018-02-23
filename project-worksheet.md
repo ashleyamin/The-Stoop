@@ -11,9 +11,10 @@ This schedule will be used to keep track of our progress throughout the week and
 |---|---| ---|
 |Day 1: Fri| Project Idea, Wireframes, Project Setup| Complete |
 |Day 2: Tue| Project Setup| Complete |
-|Day 3: Wed| Basic Clickable Model | |
-|Day 4: Thurs| Working Prototype and Styling| |
-|Day 5: Fri| Additional Styling and Deploy | |
+|Day 3: Wed| Basic Clickable Model | Complete |
+|Day 4: Thurs| Working Prototype and Styling| Complete |
+|Day 5: Fri| Additional Styling | Complete |
+|Day 6: Mon| Post-MVP Updates | |
 |Final Due Date: Wed| Project Showcase | |
 
 ## Priority Matrix
