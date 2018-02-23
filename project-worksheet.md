@@ -33,10 +33,22 @@ This schedule will be used to keep track of our progress throughout the week and
 ## Wireframes
 
 ## Table Structures
+1. Category - title, description
+2. Product - category_id, title, description, website, contact
+3. Experience - product_id, title, description, tip, name
+
+A category can have many products and a product can have many experiences; but a category has no experiences.
 
 ## Code Snippet
 
+<%= link_to "Add New Experience", new_experience_path(:product_id => @product.id) %>
+<%= link_to "All products", category_path(:id => @product.category_id) %>
+
 ## Issues and Resolutions
+Issue: Had trouble getting certain routes based upon product_id and category_id for easier user navigation
+Resolution: Force the :id to be defined by telling it to explicitly reference something in the database
+Reference:
+https://stackoverflow.com/questions/14569590/ruby-on-rails-pass-id-to-new-create-form
 
 ## Instructions for Downloading Code
 Instructions for downloading the code and running it on localhost:
