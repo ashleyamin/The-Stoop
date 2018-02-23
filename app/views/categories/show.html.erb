@@ -16,5 +16,9 @@
 <% end %>
 
 <div>
+  <%= link_to "Add New Product", new_product_path(:category_id => @category.id) %>
+</div>
+
+<div>
   <%= link_to "All categories", categories_path %>
 </div>

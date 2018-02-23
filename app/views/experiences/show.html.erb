@@ -6,3 +6,7 @@
 <%= form_for @experience, html: {method: "delete"} do |f|%>
   <%= f.submit "Delete #{@experience.title}?"%>
 <% end %>
+
+<div>
+  <%= link_to "Back to Categories", categories_path %>
+</div>

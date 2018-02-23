@@ -1,0 +1,15 @@
+<br />
+<br />
+<%= form_for @product do |f|%>
+  <%= f.hidden_field :category_id, :value => params[:category_id] %>
+  <%= f.text_field :title, placeholder: "Title" %>
+  <%= f.text_area :description, placeholder: "Description" %>
+  <%= f.text_area :website, placeholder: "Webiste" %>
+  <%= f.text_field :contact, placeholder: "Contact" %>
+  <%= f.submit "Add Product"%>
+<% end %>
+<br />
+<br />
+<div>
+  <%= link_to "Cancel", categories_path %>
+</div>
