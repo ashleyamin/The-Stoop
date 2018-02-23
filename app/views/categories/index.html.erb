@@ -1,14 +1,11 @@
-<div class="intro-header">
-  <div class="video"></div>
-</div>
-<div class="categories">
-<ul>
-  <% @categories.each do |category| %>
-  <div class="category">
-    <li>
-      <%= link_to category.title, category_path(category) %>
-    </li>
+<div class="landing-page">
+  <div class="intro-video">
   </div>
-  <% end %>
-</ul>
+  <div class="flex-container">
+      <% @categories.each do |category| %>
+      <div class="category">
+          <%= link_to category.title, category_path(category) %>
+      </div>
+      <% end %>
+  </div>
 </div>
