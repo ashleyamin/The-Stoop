@@ -20,3 +20,7 @@
 <div>
   <%= link_to "Add New Experience", new_experience_path(:product_id => @product.id) %>
 </div>
+
+<div>
+  <%= link_to "All products", category_path(:id => @product.category_id) %>
+</div>
