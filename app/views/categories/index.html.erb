@@ -1,9 +1,14 @@
-<h2>Product Categories</h2>
-
+<div class="intro-header">
+  <div class="video"></div>
+</div>
+<div class="categories">
 <ul>
   <% @categories.each do |category| %>
+  <div class="category">
     <li>
       <%= link_to category.title, category_path(category) %>
     </li>
+  </div>
   <% end %>
 </ul>
+</div>

@@ -13,3 +13,29 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
+
+.container {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 25% auto 50px;
+  margin: 0;
+}
+
+header {
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  background-color: rgba(149,197,255,1);
+}
+
+footer {
+  grid-column-start: 1;
+  grid-column-end: end;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  background-color: rgba(149,197,255,1);
+}
