@@ -1,8 +1,6 @@
 <div class="landing-page">
   <div class="intro-video">
-    <video autoplay>
-      <source src="https://i.imgur.com/JULcxjU.mp4">
-    </video>
+    <%= video_tag "Pink_Mood_NYC.mp4", :size => "700x240", :controls => false, :autoplay => "true", :loop => "true"%>
   </div>
   <div class="flex-container">
       <% @categories.each do |category| %>
