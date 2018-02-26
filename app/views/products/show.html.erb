@@ -1,7 +1,10 @@
 <div class="one-product-page">
   <div class="product-overview">
-    <h2 id="product-title"><%= @product.title %> </h2>
-    <h3 id="product-description"><%= @product.description %> </h2>
+    <h2 id="one-product-title"><%= link_to @product.title, category_path(:id => @product.category_id) %></h2>
+    <h3 id="one-product-description"><%= @product.description %> </h2>
+    <div id="new-experience-button">
+      <%= link_to "Add Experience", new_experience_path(:product_id => @product.id) %>
+    </div>
   </div>
 
   <!-- <%= link_to "Edit Product", edit_product_path(@product) %>
@@ -13,7 +16,7 @@
   <h3 class="experiences-intro-title">Experiences with <%= @product.title %></h3>
   <div class="flex-container">
     <% @product.experiences.each do |experience| %>
-      <div class="experience-list">
+      <div class="experiences-list">
         <div id="experience-title">
           <%= experience.title %>
         </div>
@@ -29,13 +32,5 @@
         </div>
       </div>
     <% end %>
-  </div>
-
-  <div id="new-experience-button">
-    <%= link_to "Add Experience", new_experience_path(:product_id => @product.id) %>
-  </div>
-
-  <div id="back-button">
-    <%= link_to "Back to #{@product.title}", category_path(:id => @product.category_id) %>
   </div>
 </div>

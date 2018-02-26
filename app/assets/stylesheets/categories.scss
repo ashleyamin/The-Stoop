@@ -212,20 +212,21 @@ ul{
   background-color: rgba(255,255,255,1);
   color: rgba(0,0,0,1);
   width: 100%;
-  height: 200px;
+  height: 300px;
   margin-top: 5px;
   margin-bottom: 5px;
   text-align: center;
   position: relative;
+  justify-content: center;
 }
 
-#product-title {
+#one-product-title {
   font-family: 'Bowlby One SC', cursive;
   font-size: 60px;
   margin: 10px;
 }
 
-#product-description {
+#one-product-description {
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
   margin: 10px;
@@ -237,6 +238,12 @@ ul{
   margin-left: 15px;
   margin-bottom: 5px;
   color: rgba(160,160,160,1);
+}
+
+.experiences-list {
+  height: 150px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 #experience-title {
@@ -264,25 +271,18 @@ ul{
 }
 
 #new-experience-button {
-  width: 130px;
-  margin-top: 50px;
+  width: 15%;
   background-color: rgba(187,204,99,1);
   border: none;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
   padding: 10px;
   border-radius: 3px;
   font-family: 'Oswald', sans-serif;
-}
-
-#back-button {
-  width: 130px;
-  margin-top: 50px;
-  background-color: rgba(187,204,99,1);
-  border: none;
-  text-decoration: none;
-  font-size: 20px;
-  padding: 10px;
-  border-radius: 3px;
-  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -50%);
 }
