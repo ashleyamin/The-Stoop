@@ -32,6 +32,29 @@ header {
   background-color: rgba(149,197,255,1);
 }
 
+#logo {
+  text-decoration: none;
+  color: black;
+  font-family: 'Bowlby One SC', cursive;
+  padding-left: 30px;
+}
+
+a:visited {
+  color: black;
+}
+
+a:link {
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: black;
+}
+
 footer {
   grid-column-start: 1;
   grid-column-end: end;
