@@ -9,12 +9,8 @@
   </head>
 
   <body class="container">
-    <header>
-      <p>The Stoop</p>
-    </header>
+    <%= render "partials/header" %>
     <%= yield %>
-    <footer>
-      <p>powered by <i class="fa fa-bath" aria-hidden="true"></i></p>
-    </footer>
+    <%= render "partials/footer" %>
   </body>
 </html>
