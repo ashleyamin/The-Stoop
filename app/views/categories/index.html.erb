@@ -1,14 +1,14 @@
 <div class="landing-page">
   <div class="intro-video">
     <%= video_tag "Pink_Mood_NYC.mp4", :width => "100%", :controls => false, :autoplay => "true", :loop => "true"%>
-    <h1 id="action-title">Surfacing the best in civic tech, every day.</h1>
+    <h1 id="action-title">Surfacing the best in civic tech.</h1>
     <p id="action-text">The Stoop is a place for new york city's neighborhood-loving enthusiasts to share and geek out about the latest mobile apps, websites, hardware projects, and tech creations.</p>
-    <button id="action-button">GO EXPLORE</button>
+    <button id="action-button"><%= link_to "GO EXPLORE", categories_path, id: "go-explore-link"%></button>
   </div>
   <div class="flex-container">
       <% @categories.each do |category| %>
       <div class="category">
-          <%= link_to category.title, category_path(category) %>
+          <%= link_to category.title, category_path(category), id: "link-to-category" %>
       </div>
       <% end %>
   </div>
