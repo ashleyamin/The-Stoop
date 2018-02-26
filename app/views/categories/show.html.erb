@@ -1,24 +1,31 @@
-<h2>Products in <%= @category.title %> </h2>
-<h4> <%= @category.description %> </h4>
-<% @category.products.each do |product| %>
-  <ul>
-    <li>
-      <%= link_to product.title, product_path(product) %>
-      <br />
-      <%= product.description %>
-      <br />
-      <%= link_to product.website, product.website %>
-      <br />
-      <%= "How to contact:" %>
-      <%= product.contact %>
-    </li>
-  </ul>
-<% end %>
-
-<div>
-  <%= link_to "Add New Product", new_product_path(:category_id => @category.id) %>
-</div>
-
-<div>
-  <%= link_to "All categories", categories_path %>
+<div class="one-category-page">
+  <div class="category-overview">
+    <h2 id="category-title"><%= @category.title %></h2>
+    <h3 id="category-description"> <%= @category.description %> </h3>
+  </div>
+  <div class="product-intro-title">Popular this Month</div>
+  <div class="flex-container">
+    <% @category.products.each do |product| %>
+      <div class="product-list">
+            <div id="product-title">
+              <%= link_to product.title, product_path(product)%>
+            </div>
+            <br />
+            <div id="product-description">
+              <%= product.description %>
+            </div>
+            <br />
+            <div id="product-website">
+              <%= link_to product.website, product.website %>
+            </div>
+            <div id="product-contact">
+              <%= "Contact By:" %>
+              <%= product.contact %>
+            </div>
+      </div>
+    <% end %>
+  </div>
+  <!-- <div class="add-new-product">
+    <%= link_to "Add New Product", new_product_path(:category_id => @category.id) %>
+  </div> -->
 </div>

@@ -1,32 +1,41 @@
-<h2><%= @product.title %> </h2>
-<h2><%= @product.description %> </h2>
+<div class="one-product-page">
+  <div class="product-overview">
+    <h2 id="product-title"><%= @product.title %> </h2>
+    <h3 id="product-description"><%= @product.description %> </h2>
+  </div>
 
-<%= link_to "Edit Product", edit_product_path(@product) %>
+  <!-- <%= link_to "Edit Product", edit_product_path(@product) %>
 
-<%= form_for @product, html: {method: "delete"} do |f|%>
-  <%= f.submit "Delete #{@product.title}?"%>
-<% end %>
+  <%= form_for @product, html: {method: "delete"} do |f|%>
+    <%= f.submit "Delete #{@product.title}?"%>
+  <% end %> -->
 
-<h3>Experiences with <%= @product.title %></h3>
-<% @product.experiences.each do |experience| %>
-  <ul>
-    <li>
-      <%= experience.title %>
-      <br />
-      <%= experience.description %>
-      <br />
-      <%= experience.tip %>
-      <br />
-      <%= "My name:" %>
-      <%= experience.name %>
-    </li>
-  </ul>
-<% end %>
+  <h3 class="experiences-intro-title">Experiences with <%= @product.title %></h3>
+  <div class="flex-container">
+    <% @product.experiences.each do |experience| %>
+      <div class="experience-list">
+        <div id="experience-title">
+          <%= experience.title %>
+        </div>
+        <div id="experience-description">
+          <%= experience.description %>
+        </div>
+        <div id="experience-tip">
+          <%= experience.tip %>
+        </div>
+        <div id="experience-name">
+          <%= "My name:" %>
+          <%= experience.name %>
+        </div>
+      </div>
+    <% end %>
+  </div>
 
-<div>
-  <%= link_to "Add New Experience", new_experience_path(:product_id => @product.id) %>
-</div>
+  <div id="new-experience-button">
+    <%= link_to "Add Experience", new_experience_path(:product_id => @product.id) %>
+  </div>
 
-<div>
-  <%= link_to "Back to products", category_path(:id => @product.category_id) %>
+  <div id="back-button">
+    <%= link_to "Back to #{@product.title}", category_path(:id => @product.category_id) %>
+  </div>
 </div>
