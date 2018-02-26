@@ -1,15 +1,22 @@
-<br />
-<br />
-<%= form_for @experience do |f|%>
-  <%= f.hidden_field :product_id, :value => params[:product_id] %>
-  <%= f.text_field :title, placeholder: "Title" %>
-  <%= f.text_area :description, placeholder: "Description" %>
-  <%= f.text_area :tip, placeholder: "Tip" %>
-  <%= f.text_field :name, placeholder: "Your Name" %>
-  <%= f.submit "Add Experience"%>
-<% end %>
-<br />
-<br />
-<div>
-  <%= link_to "Cancel", categories_path %>
+<div class="new-experience-page">
+  <br />
+  <br />
+  <%= form_for @experience do |f|%>
+    <%= f.hidden_field :product_id, :value => params[:product_id] %>
+    <br />
+    <%= f.text_field :title, placeholder: "Title", required: true %>
+    <br />
+    <%= f.text_area :description, placeholder: "Description", required: true %>
+    <br />
+    <%= f.text_area :tip, placeholder: "Tip", required: true %>
+    <br />
+    <%= f.text_field :name, placeholder: "Your Name", required: true %>
+    <br />
+    <%= f.submit "Add Experience", id: "add-experience-button"%>
+  <% end %>
+  <br />
+  <br />
+  <!-- <div class="cancel-div">
+    <%= link_to "Cancel", categories_path, id: "cancel-button" %>
+  </div> -->
 </div>

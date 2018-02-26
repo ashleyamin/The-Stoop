@@ -14,7 +14,7 @@ class ExperiencesController < ApplicationController
   def update
     @experience = Experience.find(params[:id])
     if @experience.update_attributes(experience_params)
-      redirect_to experiences_path
+      redirect_to categories_path
     else
       render :edit
     end
@@ -23,7 +23,7 @@ class ExperiencesController < ApplicationController
   def create
     @experience = Experience.new(experience_params)
     if @experience.save
-      redirect_to experience_path(@experience)
+      redirect_to categories_path(@experience)
     end
   end
 
