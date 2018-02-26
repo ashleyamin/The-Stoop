@@ -20,7 +20,7 @@
 .container {
   display: grid;
   grid-template-columns: 15% 70% 15%;
-  grid-template-rows: 25% auto 50px;
+  grid-template-rows: 25% auto 25%;
   margin: 0;
 }
 
@@ -37,7 +37,8 @@ header {
   color: white;
   font-family: 'Bowlby One SC', cursive;
   padding-left: 30px;
-  font-size: 20px;
+  font-size: 25px;
+  letter-spacing: 3px;
 }
 
 #logo-link {
@@ -72,5 +73,27 @@ footer {
   grid-row-start: 3;
   grid-row-end: 3;
   background-color: rgba(74,99,127,1);
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer-links {
+  color: white;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  padding: 20px;
+  list-style: none;
+  align-self: flex-start;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+#footer-copyright {
+  color: white;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  padding: 10px;
+  margin-right: 30px;
+  align-self: flex-end;
+  font-size: 15px;
 }
