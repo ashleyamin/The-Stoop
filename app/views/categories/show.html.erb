@@ -2,6 +2,9 @@
   <div class="category-overview">
     <h2 id="category-title"><%= @category.title %></h2>
     <h3 id="category-description"> <%= @category.description %> </h3>
+    <div id="new-product-button">
+      <%= link_to "Add New Product", new_product_path(:category_id => @category.id) %>
+    </div>
   </div>
   <div class="product-intro-title">Popular this Month</div>
   <div class="flex-container">
@@ -25,7 +28,4 @@
       </div>
     <% end %>
   </div>
-  <!-- <div class="add-new-product">
-    <%= link_to "Add New Product", new_product_path(:category_id => @category.id) %>
-  </div> -->
 </div>

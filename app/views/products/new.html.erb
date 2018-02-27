@@ -1,15 +1,28 @@
-  <br />
-  <br />
-  <%= form_for @product do |f|%>
-    <%= f.hidden_field :category_id, :value => params[:category_id] %>
-    <%= f.text_field :title, placeholder: "Title" %>
-    <%= f.text_area :description, placeholder: "Description" %>
-    <%= f.text_area :website, placeholder: "Webiste" %>
-    <%= f.text_field :contact, placeholder: "Contact" %>
-    <%= f.submit "Add Product"%>
-  <% end %>
-  <br />
-  <br />
-  <div>
-    <%= link_to "Cancel", categories_path %>
+<div class="new-experience-page">
+  <div class="flex-container-3">
+    <div class="new-product-directions">
+      <h1 id="new-product-title">Write about your Product</h1>
+      <p id="new-product-description">Your experience helps others learn about great things in civic tech.
+        <br /> Please don't write about your experience if you received a freebie for writing this.</p>
+    </div>
+    <div class="form-container">
+      <%= form_for @product do |f|%>
+        <%= f.hidden_field :category_id, :value => params[:category_id] %>
+        <br />
+        <%= f.text_field :title, placeholder: "Title" %>
+        <br />
+        <%= f.text_area :description, placeholder: "Description" %>
+        <br />
+        <%= f.text_area :website, placeholder: "Webiste" %>
+        <br />
+        <%= f.text_field :contact, placeholder: "Contact" %>
+        <br />
+        <%= f.submit "Add Product"%>
+      <% end %>
+    </div>
+
+    <div class="cancel-div">
+      <%= link_to "Cancel", categories_path, id: "cancel-button" %>
+    </div>
   </div>
+</div>
