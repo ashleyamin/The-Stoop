@@ -56,6 +56,7 @@
   padding: 10px;
   border-radius: 3px;
   font-family: 'Oswald', sans-serif;
+  width: 180px;
 }
 
 #go-explore-link {
@@ -148,17 +149,17 @@ ul{
 .product-intro-title {
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
-  margin-left: 15px;
-  margin-bottom: 5px;
+  margin-left: 200px;
+  margin-bottom: 20px;
   color: rgba(160,160,160,1);
 }
 
 .product-list {
   background-color: rgba(245,245,245,1);
   color: rgba(0,0,0,1);
-  width: 100%;
-  height: 180px;
-  margin-bottom: 5px;
+  width: 65%;
+  height: 200px;
+  margin-bottom: 20px;
   position: relative;
 }
 
@@ -177,16 +178,18 @@ ul{
   position: relative;
 }
 
-#product-title {
+#product-title span {
   font-family: 'Oswald', sans-serif;
   font-size: 35px;
   padding-left: 25px;
+  background-color: rgba(255,180,174,1);
 }
 
 #product-description {
   font-family: 'Oswald', sans-serif;
   font-size: 18px;
   padding-left: 25px;
+  width: 800px;
 }
 
 #product-website {
@@ -259,7 +262,9 @@ ul{
 }
 
 .flex-container-2 {
-  padding: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -270,8 +275,7 @@ ul{
 .experiences-intro-title {
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
-  margin-left: 30px;
-  margin-bottom: 5px;
+  margin-left: 60px;
   color: rgba(160,160,160,1);
 }
 
@@ -281,29 +285,30 @@ ul{
   width: 500px;
 }
 
-#experience-title {
+#experience-title span {
   font-family: 'Oswald', sans-serif;
   font-size: 35px;
-  padding-left: 25px;
+  padding-left: 75px;
+  background-color: rgba(149,197,255,1);
 }
 
 #experience-description {
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
-  padding-left: 25px;
+  padding-left: 75px;
 }
 
 #experience-tip {
   font-family: 'Oswald', sans-serif;
   font-size: 18px;
-  padding-left: 25px;
+  padding-left: 75px;
   padding-top: 10px;
 }
 
 #experience-name {
   font-family: 'Oswald', sans-serif;
   font-size: 15px;
-  padding-left: 25px;
+  padding-left: 75px;
   padding-top: 10px;
   color: rgba(160,160,160,1);
 }
