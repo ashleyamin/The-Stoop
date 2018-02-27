@@ -8,7 +8,7 @@
   <div class="flex-container">
       <% @categories.each do |category| %>
       <div id="category-list">
-          <%= link_to category.title, category_path(category), id: "link-to-category" %>
+        <%= link_to category.title, category_path(category), id: "link-to-category" %>
       </div>
       <% end %>
   </div>
