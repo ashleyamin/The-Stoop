@@ -14,7 +14,7 @@
   <% end %> -->
 
   <h3 class="experiences-intro-title">Experiences with <%= @product.title %></h3>
-  <div class="flex-container">
+  <div class="flex-container-2">
     <% @product.experiences.each do |experience| %>
       <div class="experiences-list">
         <div id="experience-title">
@@ -24,8 +24,6 @@
           <%= experience.description %>
         </div>
         <div id="experience-tip">
-          <%= "Tip:" %>
-          <br />
           <%= experience.tip %>
         </div>
         <div id="experience-name">

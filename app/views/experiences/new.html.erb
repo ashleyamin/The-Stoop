@@ -1,22 +1,27 @@
 <div class="new-experience-page">
-  <br />
-  <br />
-  <%= form_for @experience do |f|%>
-    <%= f.hidden_field :product_id, :value => params[:product_id] %>
-    <br />
-    <%= f.text_field :title, placeholder: "Title", required: true %>
-    <br />
-    <%= f.text_area :description, placeholder: "Description", required: true %>
-    <br />
-    <%= f.text_area :tip, placeholder: "Tip", required: true %>
-    <br />
-    <%= f.text_field :name, placeholder: "Your Name", required: true %>
-    <br />
-    <%= f.submit "Add Experience", id: "add-experience-button"%>
-  <% end %>
-  <br />
-  <br />
-  <!-- <div class="cancel-div">
-    <%= link_to "Cancel", categories_path, id: "cancel-button" %>
-  </div> -->
+  <div class="flex-container-3">
+    <div class="new-experience-directions">
+      <h1 id="new-review-title">Write about your Experience</h1>
+      <p id="new-review-description">Your experience helps others learn about great things in civic tech.
+        <br /> Please don't write about your experience if you received a freebie for writing this.</p>
+    </div>
+    <div class="form-container">
+    <%= form_for @experience do |f|%>
+      <%= f.hidden_field :product_id, :value => params[:product_id] %>
+      <br />
+      <%= f.text_field :title, placeholder: "Your experience in one word", required: true %>
+      <br />
+      <%= f.text_area :description, placeholder: "Now tell us a bit more...", required: true %>
+      <br />
+      <%= f.text_area :tip, placeholder: "Any tips for us?", required: true %>
+      <br />
+      <%= f.text_field :name, placeholder: "Your Name", required: true %>
+      <br />
+      <%= f.submit "Add Experience"%>
+    <% end %>
+    </div>
+    <div class="cancel-div">
+      <%= link_to "Cancel", categories_path, id: "cancel-button" %>
+    </div>
+  </div>
 </div>
