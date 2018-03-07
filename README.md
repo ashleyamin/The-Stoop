@@ -14,10 +14,8 @@ This schedule will be used to keep track of our progress throughout the week and
 |Day 3: Wed| Basic Clickable Model | Complete |
 |Day 4: Thurs| Working Prototype and Styling| Complete |
 |Day 5: Fri| Additional Styling | Complete |
-|Day 6: Mon| Post-MVP Updates | |
-|Final Due Date: Wed| Project Showcase | |
-
-## Priority Matrix
+|Day 6: Mon| Post-MVP Updates | Complete |
+|Final Due Date: Wed| Project Showcase | Complete |
 
 ## MVP
 
@@ -30,8 +28,6 @@ This schedule will be used to keep track of our progress throughout the week and
 1. Google Maps API; show locations on map
 2. Add in registration (auth) for organizations/admins
 3. Fun styling with loading placeholders
-
-## Wireframes
 
 ## Table Structures
 1. Category - title, description
@@ -50,11 +46,3 @@ Issue: Had trouble getting certain routes based upon product_id and category_id 
 Resolution: Force the :id to be defined by telling it to explicitly reference something in the database
 Reference:
 https://stackoverflow.com/questions/14569590/ruby-on-rails-pass-id-to-new-create-form
-
-## Instructions for Downloading Code
-Instructions for downloading the code and running it on localhost:
-
-To install this example on your computer, clone the repository and install dependencies
-1. Git clone
-2. Install dependencies, located in .json, npm install
-3. Open a web browser and run on localhost:3000
